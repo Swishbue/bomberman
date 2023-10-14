@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class LifeManager : MonoBehaviour
+{
+    public int livesCount;
+    private bool gameover;
+    private int numOfLives;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        livesCount = 4;
+        gameover = false;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+    
+            if(livesCount==0)
+        {
+           gameover = true;
+
+            Debug.Log("Game Over!");
+        }
+    }
+}
